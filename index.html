@@ -30,13 +30,13 @@ h1   {
     }
 }
 p    {
-	margin: 0px auto;
-	width: 60%;
-	color: purple; 
+	width: 50%;
+	color: white; 
 	font-family: verdana;
 	text-align: center;
 	border: 1px solid green;
 	padding: 1%;
+	margin: 1% auto;
 	}
 	
 	div{
@@ -49,35 +49,106 @@ p    {
 	font-size: 1.5em;
 	color: #3f305b;
 	
+	
 	}
 	
+	a{
+		font-family: Comic Sans MS;
+		border:1px solid blue;
+		padding: 3px;
+		margin: 5px;
+	}
+	
+	footer{
+		font-family: Comic Sans MS;
+		font-size: .8em;
+	}
+	
+	
+/* 	star code starts here */
+
+@-webkit-keyframes stars-move {
+	from {
+		background-position: 0px 0px;
+	}
+	to { 
+		background-position: 0px 360px;
+	}
+}
+#stars-1 {
+	background: url(https://dl.dropboxusercontent.com/u/195934285/stars-1.png) repeat 0% 0%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 21;
+	-webkit-animation-name: stars-move;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	overflow: scroll;
+}
+#stars-2 {
+	background: url(https://dl.dropboxusercontent.com/u/195934285/stars-2.png) repeat 0% 0%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 22;
+	-webkit-animation-name: stars-move;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	overflow: scroll;
+}
+#stars-3 {
+	background: url(https://dl.dropboxusercontent.com/u/195934285/stars-3.png) repeat 0% 0%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 23;
+	-webkit-animation-name: stars-move;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	overflow: scroll;
+}
+
+/* 
+color code starts here
+ */
+ 
+     body {
+      animation: colorchange 10s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: pink;}
+      25%  {background: purple;}
+      50%  {background: teal;}
+      75%  {background: green;}
+      100% {background: skyblue;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: pink;}
+      25%  {background: purple;}
+      50%  {background: teal;}
+      75%  {background: green;}
+      100% {background: skyblue;}
+    }
+ 
 
 </style>
   <title>iNicole.com</title>
 </head>
 <body>
+<div id="stars-1"></div>
+<div id="stars-2"></div>
+<div id="stars-3"></div>
 	<h1>iNicole.com</h1>
   <p class="banner">Welcome to my website xD</p>
-  <p>About me: I'm a 16 year old girl from NYC. </p>
-  <p class="banner">~Click on the links below~</p>
-    <center>
-  <a href="http://www.coolmath-games.com/0-run" target="_blank"
->Random Link 1</a>
-<a href="https://en.wikipedia.org/wiki/Pickled_cucumber" target="_blank"
->Random Link 2</a>
-<a href="https://www.youtube.com/watch?v=wH6gYBMO_eU" target="_blank"
->Random Link 3</a>
-<a href="https://www.fanfiction.net/cartoon/Back-at-the-Barnyard/" target="_blank"
->Random Link 4</a>
-<a href="https://answers.yahoo.com/question/index?qid=20110920133827AAvfvmZ" target="_blank"
->Random Link 5</a>
-<a href="https://www.youtube.com/watch?v=Ov5bq18OPUI" target="_blank"
->Random Link 6</a>
-<a href="http://icarly.wikia.com/wiki/Spencer_Shay" target="_blank"
->Random Link 7</a>
-<a href="https://www.youtube.com/watch?v=e67Q-sTHVhc" target="_blank"
->Random Link 8</a>
-   </center>
+  <p>About me: I'm a super cool 16 year old girl from NYC. </p>
+
  
 <center> <p class="banner">Pictures of me</p> </center>
  
@@ -100,6 +171,47 @@ p    {
 </center>
 </div>
 
+  <p class="banner">~Click on the links below~</p>
+    <center>
+  <a href="http://www.coolmath-games.com/0-run" target="_blank"
+>Random Link 1</a>
+<a href="https://en.wikipedia.org/wiki/Pickled_cucumber" target="_blank"
+>Random Link 2</a>
+<a href="https://www.youtube.com/watch?v=wH6gYBMO_eU" target="_blank"
+>Random Link 3</a>
+<a href="https://www.fanfiction.net/cartoon/Back-at-the-Barnyard/" target="_blank"
+>Random Link 4</a>
+<a href="https://answers.yahoo.com/question/index?qid=20110920133827AAvfvmZ" target="_blank"
+>Random Link 5</a>
+<a href="https://www.youtube.com/watch?v=Ov5bq18OPUI" target="_blank"
+>Random Link 6</a>
+<a href="http://icarly.wikia.com/wiki/Spencer_Shay" target="_blank"
+>Random Link 7</a>
+<a href="https://www.youtube.com/watch?v=e67Q-sTHVhc" target="_blank"
+>Random Link 8</a>
+   </center>
+
+
+ <p class="banner">Videos of me dancing :P</p>
+
+<div>
+<center>
+<video width="400" controls>
+  <source src="dancingvid.mp4" type="video/mp4">
+  <source src="dancingvid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<video width="400" controls>
+  <source src="dancingvid2.mp4" type="video/mp4">
+  <source src="dancingvid2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</center>
+</div>
+
  <p class="banner">Thanks for visiting my website :3</p>
+
+<center> <footer> © Isabel Hillman Inc. All Rights Reserved </footer> </center>
+
 </body> 
 </html>
